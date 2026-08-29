@@ -7957,26 +7957,26 @@
 			<institution>Academy of Cognitive and Natural Sciences</institution>
 			<email>semerikov@gmail.com</email>
 		</maintainer>
-		<release date="2026-07-20" version="1.8.2.0" md5="6bad10716989344a16158d2956add760">
-			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.8.2-3.3/reviewerCertificate-1.8.2-3_3.tar.gz</package>
+		<release date="2026-08-29" version="1.9.0.0" md5="0b032d2a1ae2044e25a6e4c185a1ab24">
+			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.9.0-3.3/reviewerCertificate-1.9.0-3_3.tar.gz</package>
 			<compatibility application="ojs2">
 				<version>~3.3.0.0</version>
 			</compatibility>
-			<description>Fixes certificate emails rejected by SMTP relay size limits: oversized background images are downscaled before embedding, transport failures are detected and shown to the reviewer (previously a false success on OJS 3.4+), and a link-only fallback letter is sent when the attachment is still rejected. OJS 3.3.x compatible (includes OJS 3.3 compatibility autoloader).</description>
+			<description>Adds a "Remove the background image" option (previously a background could only be replaced, never cleared), makes the certificate header text optional, and adds a Body Top Spacing setting for positioning the certificate text. Also hardens insert-ID retrieval across OJS versions and when the database driver cannot report one. OJS 3.3.x compatible (includes OJS 3.3 compatibility autoloader).</description>
 		</release>
-		<release date="2026-07-20" version="1.8.2.0" md5="51d944059dac071720fa152bd6470008">
-			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.8.2-3.4/reviewerCertificate-1.8.2-3_4.tar.gz</package>
+		<release date="2026-08-29" version="1.9.0.0" md5="4d81479869cc25643c2de4f2d9c9baee">
+			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.9.0-3.4/reviewerCertificate-1.9.0-3_4.tar.gz</package>
 			<compatibility application="ojs2">
 				<version>~3.4.0.0</version>
 			</compatibility>
-			<description>Fixes certificate emails rejected by SMTP relay size limits: oversized background images are downscaled before embedding, transport failures are detected and shown to the reviewer (previously a false success on OJS 3.4+), and a link-only fallback letter is sent when the attachment is still rejected. OJS 3.4.x compatible.</description>
+			<description>Fixes a fatal error that made every reviewer's FIRST certificate download return HTTP 500: the plugin's getInsertId() recursed into pkp-lib 3.4's deprecated _getInsertId() shim until the process died. The same crash also broke batch certificate generation and the email-certificate action. Also adds a "Remove the background image" option, makes the header text optional, and adds a Body Top Spacing setting for positioning the certificate text. OJS 3.4.x compatible.</description>
 		</release>
-		<release date="2026-07-20" version="1.8.2.0" md5="b35e6c202863a4fe9781a66050a2715e">
-			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.8.2-3.5/reviewerCertificate-1.8.2-3_5.tar.gz</package>
+		<release date="2026-08-29" version="1.9.0.0" md5="019126cd31da3f617836b03e054efa02">
+			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.9.0-3.5/reviewerCertificate-1.9.0-3_5.tar.gz</package>
 			<compatibility application="ojs2">
 				<version>~3.5.0.0</version>
 			</compatibility>
-			<description>Fixes certificate emails rejected by SMTP relay size limits: oversized background images are downscaled before embedding, transport failures are detected and shown to the reviewer (previously a false success on OJS 3.4+), and a link-only fallback letter is sent when the attachment is still rejected. OJS 3.5.x compatible.</description>
+			<description>Adds a "Remove the background image" option (previously a background could only be replaced, never cleared), makes the certificate header text optional, and adds a Body Top Spacing setting for positioning the certificate text. Also hardens insert-ID retrieval, including on PostgreSQL where lastInsertId() without a sequence name is unreliable. OJS 3.5.x compatible.</description>
 		</release>
 	</plugin>
 	<plugin category="generic" product="reviewerCredits">
