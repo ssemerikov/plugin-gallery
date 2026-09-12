@@ -7957,26 +7957,26 @@
 			<institution>Academy of Cognitive and Natural Sciences</institution>
 			<email>semerikov@gmail.com</email>
 		</maintainer>
-		<release date="2026-08-29" version="1.9.0.0" md5="0b032d2a1ae2044e25a6e4c185a1ab24">
-			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.9.0-3.3/reviewerCertificate-1.9.0-3_3.tar.gz</package>
+		<release date="2026-09-12" version="1.10.0.0" md5="d1ec6a3f7f44bab696199250ccc6b937">
+			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.10.0-3.3/reviewerCertificate-1.10.0-3_3.tar.gz</package>
 			<compatibility application="ojs2">
 				<version>~3.3.0.0</version>
 			</compatibility>
-			<description>Adds a "Remove the background image" option (previously a background could only be replaced, never cleared), makes the certificate header text optional, and adds a Body Top Spacing setting for positioning the certificate text. Also hardens insert-ID retrieval across OJS versions and when the database driver cannot report one. OJS 3.3.x compatible (includes OJS 3.3 compatibility autoloader).</description>
+			<description>Addresses PKP review feedback: CSRF-protected batch actions, OJS-native database connections and schema migrations, transactional uploads respecting core permissions, durable notification tracking, PostgreSQL-safe queries, valid localized email templates, and smaller target-specific packages. Preserves issued certificates during upgrades. OJS 3.3.x compatible; includes the legacy compatibility loader and resolves dependencies against PHP 7.3.0.</description>
 		</release>
-		<release date="2026-08-29" version="1.9.0.0" md5="4d81479869cc25643c2de4f2d9c9baee">
-			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.9.0-3.4/reviewerCertificate-1.9.0-3_4.tar.gz</package>
+		<release date="2026-09-12" version="1.10.0.0" md5="6a40d0a3c934d1172bc0e93bb3d8310e">
+			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.10.0-3.4/reviewerCertificate-1.10.0-3_4.tar.gz</package>
 			<compatibility application="ojs2">
 				<version>~3.4.0.0</version>
 			</compatibility>
-			<description>Fixes a fatal error that made every reviewer's FIRST certificate download return HTTP 500: the plugin's getInsertId() recursed into pkp-lib 3.4's deprecated _getInsertId() shim until the process died. The same crash also broke batch certificate generation and the email-certificate action. Also adds a "Remove the background image" option, makes the header text optional, and adds a Body Top Spacing setting for positioning the certificate text. OJS 3.4.x compatible.</description>
+			<description>Addresses PKP review feedback: CSRF-protected batch actions, OJS-native database connections and schema migrations, transactional uploads respecting core permissions, durable notification tracking, PostgreSQL-safe queries, valid localized email templates, and smaller target-specific packages. Preserves issued certificates during upgrades. OJS 3.4.x compatible; resolves dependencies against PHP 8.0.2.</description>
 		</release>
-		<release date="2026-08-29" version="1.9.0.0" md5="019126cd31da3f617836b03e054efa02">
-			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.9.0-3.5/reviewerCertificate-1.9.0-3_5.tar.gz</package>
+		<release date="2026-09-12" version="1.10.0.0" md5="dd380b7dfc7bd156eca7225d46c361da">
+			<package>https://github.com/ssemerikov/reviewerCertificate/releases/download/v1.10.0-3.5/reviewerCertificate-1.10.0-3_5.tar.gz</package>
 			<compatibility application="ojs2">
 				<version>~3.5.0.0</version>
 			</compatibility>
-			<description>Adds a "Remove the background image" option (previously a background could only be replaced, never cleared), makes the certificate header text optional, and adds a Body Top Spacing setting for positioning the certificate text. Also hardens insert-ID retrieval, including on PostgreSQL where lastInsertId() without a sequence name is unreliable. OJS 3.5.x compatible.</description>
+			<description>Addresses PKP review feedback: CSRF-protected batch actions, OJS-native database connections and schema migrations, transactional uploads respecting core permissions, durable notification tracking, PostgreSQL-safe queries, valid localized email templates, and smaller target-specific packages. Preserves issued certificates during upgrades. OJS 3.5.x compatible; resolves dependencies against PHP 8.2.0.</description>
 		</release>
 	</plugin>
 	<plugin category="generic" product="reviewerCredits">
